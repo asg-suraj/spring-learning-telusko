@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+  <servlet>
+  <servlet-name>AddNumbers</servlet-name>
+  <servlet-class>com.suraj.math.AddNumbersServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AddNumbers</servlet-name>
+  <url-pattern>/add</url-pattern>  
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>SqrServlet</servlet-name>
+  <servlet-class>com.suraj.math.SqrServlet</servlet-class>
+  
+  <init-param>
+  	<param-name>name</param-name>
+  	<param-value>Raju</param-value>
+  </init-param>
+  
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SqrServlet</servlet-name>
+  <url-pattern>/sqr</url-pattern>  
+  </servlet-mapping>
+  
+  <context-param>
+  	<param-name>name</param-name>
+  	<param-value>Suraj</param-value>
+  	
+  </context-param>
+  
+  
+  
+</web-app>
